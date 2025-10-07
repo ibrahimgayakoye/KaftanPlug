@@ -1,0 +1,56 @@
+{% extends '@!SyliusShop/shared/layout/base/header/content.html.twig' %}
+
+{% block content %}
+  {{ parent() }}
+
+  {# Ajout du lien “Qui sommes-nous” #}
+  <nav class="extra-nav">
+    <a href="{{ path('sylius_shop_homepage') }}#about" class="extra-link">Qui sommes-nous</a>
+  </nav>
+{% endblock %}
+
+{% block styles %}
+  {{ parent() }}
+  <style>
+    /* Marron principal */
+    header,
+    .ui.menu,
+    .main.menu,
+    .top.bar,
+    .sylius-main-menu {
+      background-color: #a88a6a !important;
+    }
+
+    .ui.menu .item,
+    .ui.menu a.item,
+    .ui.menu .dropdown.item {
+      color: #fff !important;
+    }
+
+    .ui.menu a.item:hover {
+      color: #f1e5d0 !important;
+    }
+
+    .extra-nav {
+      display: inline-block;
+      margin-left: 2rem;
+    }
+
+    .extra-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .extra-link:hover {
+      color: #f1e5d0;
+    }
+
+    /* Logo personnalisé */
+    .ui.menu .item img.logo {
+      height: 60px !important;
+      width: auto;
+      object-fit: contain;
+    }
+  </style>
+{% endblock %}
