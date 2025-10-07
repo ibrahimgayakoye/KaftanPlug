@@ -1,0 +1,89 @@
+{
+    "name": "sylius/mollie-plugin",
+    "type": "sylius-plugin",
+    "description": "Mollie payment plugin for Sylius applications.",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "mollie/mollie-api-php": "^2.73",
+        "sylius/sylius": "^2.0.8",
+        "willdurand/js-translation-bundle": "^7.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.7",
+        "dmore/behat-chrome-extension": "^1.3",
+        "dmore/chrome-mink-driver": "^2.7",
+        "friends-of-behat/mink": "^1.8",
+        "friends-of-behat/mink-browserkit-driver": "^1.4",
+        "friends-of-behat/mink-debug-extension": "^2.0.0",
+        "friends-of-behat/mink-extension": "^2.4",
+        "friends-of-behat/page-object-extension": "^0.3",
+        "friends-of-behat/suite-settings-extension": "^1.0",
+        "friends-of-behat/symfony-extension": "^2.1",
+        "friends-of-behat/variadic-extension": "^1.3",
+        "lchrusciel/api-test-case": "^5.2",
+        "matthiasnoback/symfony-dependency-injection-test": "^5.1",
+        "phpstan/extension-installer": "^1.0",
+        "phpstan/phpstan": "^1.0",
+        "phpstan/phpstan-doctrine": "^1.0",
+        "phpstan/phpstan-strict-rules": "^1.0",
+        "phpstan/phpstan-symfony": "^1.0",
+        "phpstan/phpstan-webmozart-assert": "^1.0",
+        "phpunit/phpunit": "^9.5",
+        "polishsymfonycommunity/symfony-mocker-container": "^1.0",
+        "slevomat/coding-standard": "~8.22.1",
+        "sylius-labs/coding-standard": "^4.0",
+        "sylius/test-application": "^2.0.0@alpha",
+        "symfony/browser-kit": "^6.4 || ^7.1",
+        "symfony/debug-bundle": "^6.4 || ^7.1",
+        "symfony/dotenv": "^6.4 || ^7.1",
+        "symfony/flex": "^2.0",
+        "symfony/intl": "^6.4 || ^7.1",
+        "symfony/web-profiler-bundle": "^6.4 || ^7.1",
+        "symfony/webpack-encore-bundle": "^2.2",
+        "winzou/state-machine": "^0.4",
+        "winzou/state-machine-bundle": "^0.6"
+    },
+    "suggest": {
+        "sylius/refund-plugin": "To allow refunding payments in the Mollie payment method."
+    },
+    "scripts": {
+        "analyse": [
+            "@composer validate --strict",
+            "vendor/bin/phpstan.phar analyse -c phpstan.neon -l max src/",
+            "vendor/bin/ecs check src/"
+        ],
+        "fix": [
+            "vendor/bin/ecs check src/ --fix"
+        ]
+    },
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Sylius\\MolliePlugin\\": "src/",
+            "Tests\\Sylius\\MolliePlugin\\": ["tests/", "tests/TestApplication/src/"]
+        }
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true,
+            "symfony/flex": true,
+            "symfony/runtime": false,
+            "symfony/thanks": false
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "symfony": {
+            "require": "~7.3.0",
+            "allow-contrib": false,
+            "docker": false
+        },
+        "public-dir": "vendor/sylius/test-application/public"
+    }
+}

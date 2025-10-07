@@ -1,0 +1,993 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+use Twig\TemplateWrapper;
+
+/* shop/footer/custom_footer.html.twig */
+class __TwigTemplate_e2ecc67eb6cb874c394998698655ec8a extends Template
+{
+    private Source $source;
+    /**
+     * @var array<string, Template>
+     */
+    private array $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "shop/footer/custom_footer.html.twig"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "shop/footer/custom_footer.html.twig"));
+
+        // line 1
+        $context["menuTaxon"] = (((CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["sylius"] ?? null), "channel", [], "any", false, true, false, 1), "menuTaxon", [], "any", true, true, false, 1) &&  !(null === CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["sylius"]) || array_key_exists("sylius", $context) ? $context["sylius"] : (function () { throw new RuntimeError('Variable "sylius" does not exist.', 1, $this->source); })()), "channel", [], "any", false, false, false, 1), "menuTaxon", [], "any", false, false, false, 1)))) ? (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["sylius"]) || array_key_exists("sylius", $context) ? $context["sylius"] : (function () { throw new RuntimeError('Variable "sylius" does not exist.', 1, $this->source); })()), "channel", [], "any", false, false, false, 1), "menuTaxon", [], "any", false, false, false, 1)) : (null));
+        // line 2
+        $context["catalogUrl"] = (((($tmp = (isset($context["menuTaxon"]) || array_key_exists("menuTaxon", $context) ? $context["menuTaxon"] : (function () { throw new RuntimeError('Variable "menuTaxon" does not exist.', 2, $this->source); })())) && $tmp instanceof Markup ? (string) $tmp : $tmp)) ? ($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("sylius_shop_product_index", ["slug" => CoreExtension::getAttribute($this->env, $this->source,         // line 3
+(isset($context["menuTaxon"]) || array_key_exists("menuTaxon", $context) ? $context["menuTaxon"] : (function () { throw new RuntimeError('Variable "menuTaxon" does not exist.', 3, $this->source); })()), "slug", [], "any", false, false, false, 3)])) : ($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("sylius_shop_homepage")));
+        // line 6
+        yield "
+<footer class=\"kp-footer\" role=\"contentinfo\">
+  <div class=\"kp-footer__top\">
+    <div class=\"kp-footer__grid\">
+      <!-- Colonne Brand -->
+      <div class=\"kp-footer__brand\">
+        <img
+          src=\"";
+        // line 13
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/app/shop/images/logo.png", "app.shop"), "html", null, true);
+        yield "\"
+          alt=\"Kaftan Plug — Logo\"
+          class=\"kp-footer__logo\"
+          width=\"120\"
+          height=\"60\"
+          loading=\"lazy\"
+        />
+        <p class=\"kp-footer__tagline\">Kaftan Plug — où l'élégance rencontre l'artisanat.</p>
+        <div class=\"kp-footer__social\">
+          <a href=\"#\" aria-label=\"Instagram\" class=\"kp-social__link\">📸</a>
+          <a href=\"#\" aria-label=\"Facebook\" class=\"kp-social__link\">📘</a>
+          <a href=\"#\" aria-label=\"TikTok\" class=\"kp-social__link\">🎵</a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class=\"kp-footer__col\" aria-label=\"Navigation principale\">
+        <h4 class=\"kp-footer__title\">Explorer</h4>
+        <ul class=\"kp-footer__list\">
+          <li><a href=\"";
+        // line 32
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("sylius_shop_homepage");
+        yield "\" class=\"kp-footer__link\">Accueil</a></li>
+          <li><a href=\"";
+        // line 33
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["catalogUrl"]) || array_key_exists("catalogUrl", $context) ? $context["catalogUrl"] : (function () { throw new RuntimeError('Variable "catalogUrl" does not exist.', 33, $this->source); })()), "html", null, true);
+        yield "\" class=\"kp-footer__link\">Catalogue</a></li>
+          <li><a href=\"";
+        // line 34
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("sylius_shop_login");
+        yield "\" class=\"kp-footer__link\">Mon compte</a></li>
+          <li><a href=\"#\" class=\"kp-footer__link\">Nouveautés</a></li>
+          <li><a href=\"#\" class=\"kp-footer__link\">Collections</a></li>
+        </ul>
+      </nav>
+
+      <!-- Assistance -->
+      <nav class=\"kp-footer__col\" aria-label=\"Assistance client\">
+        <h4 class=\"kp-footer__title\">Assistance</h4>
+        <ul class=\"kp-footer__list\">
+          <li><a href=\"#\" class=\"kp-footer__link\">Contact & Support</a></li>
+          <li><a href=\"#\" class=\"kp-footer__link\">Livraison & Retours</a></li>
+          <li><a href=\"#\" class=\"kp-footer__link\">Guide des tailles</a></li>
+          <li><a href=\"#\" class=\"kp-footer__link\">FAQ</a></li>
+          <li><a href=\"#\" class=\"kp-footer__link\">Conditions générales</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact -->
+      <div class=\"kp-footer__col\">
+        <h4 class=\"kp-footer__title\">Contact</h4>
+        <ul class=\"kp-footer__list\">
+          <li class=\"kp-contact__item\">
+            <span class=\"kp-contact__icon\">📞</span>
+            <span>+33 1 23 45 67 89</span>
+          </li>
+          <li class=\"kp-contact__item\">
+            <span class=\"kp-contact__icon\">✉️</span>
+            <span>contact@kaftanplug.com</span>
+          </li>
+          <li class=\"kp-contact__item\">
+            <span class=\"kp-contact__icon\">🕘</span>
+            <span>Lun–Ven : 9h-18h</span>
+          </li>
+          <li class=\"kp-contact__item\">
+            <span class=\"kp-contact__icon\">📍</span>
+            <span>Paris, France</span>
+          </li>
+        </ul>
+        
+        <!-- Newsletter -->
+        <div class=\"kp-newsletter\">
+          <h5 class=\"kp-newsletter__title\">Newsletter</h5>
+          <p class=\"kp-newsletter__text\">Recevez nos offres exclusives</p>
+          <form class=\"kp-newsletter__form\">
+            <input type=\"email\" placeholder=\"Votre email\" class=\"kp-newsletter__input\" required>
+            <button type=\"submit\" class=\"kp-newsletter__btn\">S'abonner</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class=\"kp-footer__bottom\">
+    <div class=\"kp-footer__bottom__content\">
+      <div class=\"kp-footer__copyright\">
+        <span>&copy; ";
+        // line 90
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Twig\Extension\CoreExtension']->formatDate("now", "Y"), "html", null, true);
+        yield " Kaftan Plug — Tous droits réservés.</span>
+        <div class=\"kp-footer__legal\">
+          <a href=\"#\" class=\"kp-legal__link\">Mentions légales</a>
+          <span class=\"kp-separator\">•</span>
+          <a href=\"#\" class=\"kp-legal__link\">Politique de confidentialité</a>
+          <span class=\"kp-separator\">•</span>
+          <a href=\"#\" class=\"kp-legal__link\">CGV</a>
+        </div>
+      </div>
+      <div class=\"kp-footer__credits\">
+        <span>Fait avec ❤️ par Kaftan Plug</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  :root {
+    --kp-primary: #8B7355;
+    --kp-primary-dark: #6B5A45;
+    --kp-primary-light: #A88A6A;
+    --kp-accent: #D4AF8C;
+    --kp-text: #2C1810;
+    --kp-text-light: #5A4A3A;
+    --kp-border: rgba(139, 115, 85, 0.2);
+    --kp-bg-light: #F8F4F0;
+    --kp-shadow: 0 4px 20px rgba(139, 115, 85, 0.1);
+  }
+
+  .kp-footer {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    color: var(--kp-text);
+    background: linear-gradient(135deg, var(--kp-primary) 0%, var(--kp-primary-dark) 100%);
+    border-top: 1px solid var(--kp-border);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .kp-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--kp-accent), transparent);
+  }
+
+  .kp-footer__top {
+    padding: 3rem 4vw;
+    position: relative;
+    z-index: 1;
+  }
+
+  .kp-footer__grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .kp-footer__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .kp-footer__logo {
+    width: 140px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+  }
+
+  .kp-footer__logo:hover {
+    opacity: 1;
+  }
+
+  .kp-footer__tagline {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  .kp-footer__social {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .kp-social__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  .kp-social__link:hover {
+    background: var(--kp-accent);
+    transform: translateY(-2px);
+  }
+
+  .kp-footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .kp-footer__title {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    position: relative;
+  }
+
+  .kp-footer__title::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--kp-accent);
+  }
+
+  .kp-footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .kp-footer__link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 300;
+    position: relative;
+    padding-left: 0;
+  }
+
+  .kp-footer__link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: var(--kp-accent);
+    transition: width 0.3s ease;
+  }
+
+  .kp-footer__link:hover {
+    color: white;
+    padding-left: 10px;
+  }
+
+  .kp-footer__link:hover::before {
+    width: 8px;
+  }
+
+  .kp-contact__item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+  }
+
+  .kp-contact__icon {
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+  }
+
+  .kp-newsletter {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--kp-border);
+    margin-top: 1rem;
+  }
+
+  .kp-newsletter__title {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+  }
+
+  .kp-newsletter__text {
+    margin: 0 0 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+
+  .kp-newsletter__form {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
+  .kp-newsletter__input {
+    padding: 0.75rem;
+    border: 1px solid var(--kp-border);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+
+  .kp-newsletter__input:focus {
+    outline: none;
+    border-color: var(--kp-accent);
+    background: white;
+    transform: translateY(-1px);
+  }
+
+  .kp-newsletter__btn {
+    padding: 0.75rem 1.5rem;
+    background: var(--kp-accent);
+    color: var(--kp-text);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .kp-newsletter__btn:hover {
+    background: white;
+    transform: translateY(-2px);
+  }
+
+  .kp-footer__bottom {
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid var(--kp-border);
+    padding: 1.5rem 4vw;
+    backdrop-filter: blur(10px);
+  }
+
+  .kp-footer__bottom__content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .kp-footer__copyright {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .kp-footer__legal {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .kp-legal__link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.85rem;
+  }
+
+  .kp-legal__link:hover {
+    color: white;
+  }
+
+  .kp-separator {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .kp-footer__credits {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .kp-footer__grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .kp-footer__top {
+      padding: 2rem 4vw;
+    }
+    
+    .kp-footer__grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .kp-footer__title::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .kp-footer__social {
+      justify-content: center;
+    }
+
+    .kp-footer__bottom__content {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .kp-footer__copyright {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .kp-newsletter__form {
+      flex-direction: row;
+    }
+
+    .kp-newsletter__input {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .kp-newsletter__form {
+      flex-direction: column;
+    }
+  }
+</style>";
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        yield from [];
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName(): string
+    {
+        return "shop/footer/custom_footer.html.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable(): bool
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo(): array
+    {
+        return array (  151 => 90,  92 => 34,  88 => 33,  84 => 32,  62 => 13,  53 => 6,  51 => 3,  50 => 2,  48 => 1,);
+    }
+
+    public function getSourceContext(): Source
+    {
+        return new Source("{% set menuTaxon = sylius.channel.menuTaxon ?? null %}
+{% set catalogUrl = menuTaxon
+  ? path('sylius_shop_product_index', {'slug': menuTaxon.slug})
+  : path('sylius_shop_homepage')
+%}
+
+<footer class=\"kp-footer\" role=\"contentinfo\">
+  <div class=\"kp-footer__top\">
+    <div class=\"kp-footer__grid\">
+      <!-- Colonne Brand -->
+      <div class=\"kp-footer__brand\">
+        <img
+          src=\"{{ asset('build/app/shop/images/logo.png', 'app.shop') }}\"
+          alt=\"Kaftan Plug — Logo\"
+          class=\"kp-footer__logo\"
+          width=\"120\"
+          height=\"60\"
+          loading=\"lazy\"
+        />
+        <p class=\"kp-footer__tagline\">Kaftan Plug — où l'élégance rencontre l'artisanat.</p>
+        <div class=\"kp-footer__social\">
+          <a href=\"#\" aria-label=\"Instagram\" class=\"kp-social__link\">📸</a>
+          <a href=\"#\" aria-label=\"Facebook\" class=\"kp-social__link\">📘</a>
+          <a href=\"#\" aria-label=\"TikTok\" class=\"kp-social__link\">🎵</a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class=\"kp-footer__col\" aria-label=\"Navigation principale\">
+        <h4 class=\"kp-footer__title\">Explorer</h4>
+        <ul class=\"kp-footer__list\">
+          <li><a href=\"{{ path('sylius_shop_homepage') }}\" class=\"kp-footer__link\">Accueil</a></li>
+          <li><a href=\"{{ catalogUrl }}\" class=\"kp-footer__link\">Catalogue</a></li>
+          <li><a href=\"{{ path('sylius_shop_login') }}\" class=\"kp-footer__link\">Mon compte</a></li>
+          <li><a href=\"#\" class=\"kp-footer__link\">Nouveautés</a></li>
+          <li><a href=\"#\" class=\"kp-footer__link\">Collections</a></li>
+        </ul>
+      </nav>
+
+      <!-- Assistance -->
+      <nav class=\"kp-footer__col\" aria-label=\"Assistance client\">
+        <h4 class=\"kp-footer__title\">Assistance</h4>
+        <ul class=\"kp-footer__list\">
+          <li><a href=\"#\" class=\"kp-footer__link\">Contact & Support</a></li>
+          <li><a href=\"#\" class=\"kp-footer__link\">Livraison & Retours</a></li>
+          <li><a href=\"#\" class=\"kp-footer__link\">Guide des tailles</a></li>
+          <li><a href=\"#\" class=\"kp-footer__link\">FAQ</a></li>
+          <li><a href=\"#\" class=\"kp-footer__link\">Conditions générales</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact -->
+      <div class=\"kp-footer__col\">
+        <h4 class=\"kp-footer__title\">Contact</h4>
+        <ul class=\"kp-footer__list\">
+          <li class=\"kp-contact__item\">
+            <span class=\"kp-contact__icon\">📞</span>
+            <span>+33 1 23 45 67 89</span>
+          </li>
+          <li class=\"kp-contact__item\">
+            <span class=\"kp-contact__icon\">✉️</span>
+            <span>contact@kaftanplug.com</span>
+          </li>
+          <li class=\"kp-contact__item\">
+            <span class=\"kp-contact__icon\">🕘</span>
+            <span>Lun–Ven : 9h-18h</span>
+          </li>
+          <li class=\"kp-contact__item\">
+            <span class=\"kp-contact__icon\">📍</span>
+            <span>Paris, France</span>
+          </li>
+        </ul>
+        
+        <!-- Newsletter -->
+        <div class=\"kp-newsletter\">
+          <h5 class=\"kp-newsletter__title\">Newsletter</h5>
+          <p class=\"kp-newsletter__text\">Recevez nos offres exclusives</p>
+          <form class=\"kp-newsletter__form\">
+            <input type=\"email\" placeholder=\"Votre email\" class=\"kp-newsletter__input\" required>
+            <button type=\"submit\" class=\"kp-newsletter__btn\">S'abonner</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class=\"kp-footer__bottom\">
+    <div class=\"kp-footer__bottom__content\">
+      <div class=\"kp-footer__copyright\">
+        <span>&copy; {{ \"now\"|date(\"Y\") }} Kaftan Plug — Tous droits réservés.</span>
+        <div class=\"kp-footer__legal\">
+          <a href=\"#\" class=\"kp-legal__link\">Mentions légales</a>
+          <span class=\"kp-separator\">•</span>
+          <a href=\"#\" class=\"kp-legal__link\">Politique de confidentialité</a>
+          <span class=\"kp-separator\">•</span>
+          <a href=\"#\" class=\"kp-legal__link\">CGV</a>
+        </div>
+      </div>
+      <div class=\"kp-footer__credits\">
+        <span>Fait avec ❤️ par Kaftan Plug</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  :root {
+    --kp-primary: #8B7355;
+    --kp-primary-dark: #6B5A45;
+    --kp-primary-light: #A88A6A;
+    --kp-accent: #D4AF8C;
+    --kp-text: #2C1810;
+    --kp-text-light: #5A4A3A;
+    --kp-border: rgba(139, 115, 85, 0.2);
+    --kp-bg-light: #F8F4F0;
+    --kp-shadow: 0 4px 20px rgba(139, 115, 85, 0.1);
+  }
+
+  .kp-footer {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    color: var(--kp-text);
+    background: linear-gradient(135deg, var(--kp-primary) 0%, var(--kp-primary-dark) 100%);
+    border-top: 1px solid var(--kp-border);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .kp-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--kp-accent), transparent);
+  }
+
+  .kp-footer__top {
+    padding: 3rem 4vw;
+    position: relative;
+    z-index: 1;
+  }
+
+  .kp-footer__grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .kp-footer__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .kp-footer__logo {
+    width: 140px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+  }
+
+  .kp-footer__logo:hover {
+    opacity: 1;
+  }
+
+  .kp-footer__tagline {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  .kp-footer__social {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .kp-social__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  .kp-social__link:hover {
+    background: var(--kp-accent);
+    transform: translateY(-2px);
+  }
+
+  .kp-footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .kp-footer__title {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    position: relative;
+  }
+
+  .kp-footer__title::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--kp-accent);
+  }
+
+  .kp-footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .kp-footer__link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 300;
+    position: relative;
+    padding-left: 0;
+  }
+
+  .kp-footer__link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: var(--kp-accent);
+    transition: width 0.3s ease;
+  }
+
+  .kp-footer__link:hover {
+    color: white;
+    padding-left: 10px;
+  }
+
+  .kp-footer__link:hover::before {
+    width: 8px;
+  }
+
+  .kp-contact__item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+  }
+
+  .kp-contact__icon {
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+  }
+
+  .kp-newsletter {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--kp-border);
+    margin-top: 1rem;
+  }
+
+  .kp-newsletter__title {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+  }
+
+  .kp-newsletter__text {
+    margin: 0 0 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+
+  .kp-newsletter__form {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
+  .kp-newsletter__input {
+    padding: 0.75rem;
+    border: 1px solid var(--kp-border);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+
+  .kp-newsletter__input:focus {
+    outline: none;
+    border-color: var(--kp-accent);
+    background: white;
+    transform: translateY(-1px);
+  }
+
+  .kp-newsletter__btn {
+    padding: 0.75rem 1.5rem;
+    background: var(--kp-accent);
+    color: var(--kp-text);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .kp-newsletter__btn:hover {
+    background: white;
+    transform: translateY(-2px);
+  }
+
+  .kp-footer__bottom {
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid var(--kp-border);
+    padding: 1.5rem 4vw;
+    backdrop-filter: blur(10px);
+  }
+
+  .kp-footer__bottom__content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .kp-footer__copyright {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .kp-footer__legal {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .kp-legal__link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.85rem;
+  }
+
+  .kp-legal__link:hover {
+    color: white;
+  }
+
+  .kp-separator {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .kp-footer__credits {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .kp-footer__grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .kp-footer__top {
+      padding: 2rem 4vw;
+    }
+    
+    .kp-footer__grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .kp-footer__title::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .kp-footer__social {
+      justify-content: center;
+    }
+
+    .kp-footer__bottom__content {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .kp-footer__copyright {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .kp-newsletter__form {
+      flex-direction: row;
+    }
+
+    .kp-newsletter__input {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .kp-newsletter__form {
+      flex-direction: column;
+    }
+  }
+</style>", "shop/footer/custom_footer.html.twig", "/Users/abdourahamanegayakoyeibrahim/Desktop/KaftanPlug/templates/shop/footer/custom_footer.html.twig");
+    }
+}

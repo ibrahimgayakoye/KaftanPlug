@@ -1,0 +1,41 @@
+{# templates/shop/header/logo.html.twig #}
+<a href="{{ path('sylius_shop_homepage') }}" 
+   class="kp-logo d-flex align-items-center justify-content-start" 
+   aria-label="Kaftan Plug">
+  <img 
+    src="{{ asset('build/app/shop/images/logo.png', 'app.shop') }}"
+    alt="Kaftan Plug — Logo"
+    class="kp-logo-img"
+    loading="lazy"
+  >
+</a>
+
+<style>
+  /* Conteneur du logo */
+  .kp-logo {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+  }
+
+  /* Image du logo */
+  .kp-logo-img {
+    height: 100px;           /* hauteur idéale (ajuste ici : 38–50px max) */
+    width: auto;
+    object-fit: contain;
+    display: block;
+    transition: transform .2s ease;
+  }
+
+  /* Légère animation au survol */
+  .kp-logo-img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Réduction sur mobile */
+  @media (max-width: 992px) {
+    .kp-logo-img {
+      height: 34px;
+    }
+  }
+</style>

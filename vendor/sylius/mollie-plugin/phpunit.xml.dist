@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/9.5/phpunit.xsd"
+    backupGlobals="false"
+    colors="true"
+    bootstrap="vendor/sylius/test-application/config/bootstrap.php"
+
+>
+    <testsuites>
+        <testsuite name="unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="integration-refund">
+            <directory>tests/Integration/Refund/Functional</directory>
+            <directory>tests/Integration/Refund/Unit</directory>
+        </testsuite>
+    </testsuites>
+
+    <php>
+        <env name="APP_ENV" value="test"/>
+        <env name="APP_SECRET" value="3bdace956617bb6576d69894be92d43a"/>
+        <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak"/>
+
+        <server name="APP_ENV" value="test" />
+        <server name="KERNEL_CLASS" value="Sylius\TestApplication\Kernel" />
+        <server name="EXPECTED_RESPONSE_DIR" value="tests/Responses/json" />
+        <server name="IS_DOCTRINE_ORM_SUPPORTED" value="true" />
+    </php>
+</phpunit>

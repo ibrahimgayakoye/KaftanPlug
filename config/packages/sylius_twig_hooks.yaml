@@ -1,0 +1,28 @@
+# config/packages/sylius_twig_hooks.yaml
+sylius_twig_hooks:
+  hooks:
+
+    # === HEADER (thème marron déjà OK) ===
+    sylius_shop.base.header:
+      content:
+        enabled: true
+      
+      kaftan_header_theme:
+        template: 'shop/header/theme_overrides.html.twig'
+        priority: 1000
+
+    # === LOGO : bon hook + on coupe le hookable "content" d'origine ===
+    sylius_shop.base.header.content.logo:
+      content:
+        enabled: false            # désactive @SyliusShop/shared/logo.html.twig
+      custom_logo:
+        template: 'shop/header/logo.html.twig'
+        priority: 1000            # passe avant tout
+
+    # === FOOTER ===
+    sylius_shop.base.footer:
+      content:
+        enabled: false
+      custom_footer:
+        template: 'shop/footer/custom_footer.html.twig'
+        priority: 1000

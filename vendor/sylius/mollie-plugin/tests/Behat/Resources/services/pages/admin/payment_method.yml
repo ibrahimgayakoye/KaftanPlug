@@ -1,0 +1,7 @@
+services:
+    sylius_mollie.behat.page.admin.payment_method.create:
+         class: Tests\Sylius\MolliePlugin\Behat\Page\Admin\PaymentMethod\CreatePage
+         parent: "sylius.behat.page.admin.crud.create"
+         public: false
+         arguments:
+             - "sylius_admin_payment_method_create"

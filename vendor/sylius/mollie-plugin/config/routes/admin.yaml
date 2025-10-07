@@ -1,0 +1,29 @@
+mollie_methods:
+    resource: "admin/methods.yaml"
+
+mollie_logger:
+    resource: "admin/mollie_logger.yaml"
+
+mollie_logo:
+    resource: "admin/mollie_logo.yaml"
+
+mollie_payment_link:
+    resource: "admin/payment_link.yaml"
+
+mollie_email_template:
+    resource: "admin/mollie_email_template.yaml"
+
+mollie_product_type:
+    resource: "admin/product_type.yaml"
+
+sylius_mollie_admin_onboarding_wizard_status:
+    resource: "admin/onboarding_wizard/status.yaml"
+
+sylius_mollie_admin_onboarding_wizard_completed:
+    resource: "admin/onboarding_wizard/completed.yaml"
+
+sylius_mollie_plugin_mollie_subscription:
+    resource: "admin/mollie_subscription.yaml"
+
+sylius_mollie_admin_payum_refund:
+    resource: "@PayumBundle/Resources/config/routing/refund.xml"

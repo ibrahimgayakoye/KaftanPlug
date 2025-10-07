@@ -1,0 +1,46 @@
+services:
+    sylius_mollie.behat.context.setup.mollie:
+        class: Tests\Sylius\MolliePlugin\Behat\Context\Setup\MollieContext
+        public: true
+        arguments:
+            - "@sylius.behat.shared_storage"
+            - "@sylius.repository.payment_method"
+            - "@sylius.fixture.example_factory.payment_method"
+            - "@sylius.manager.payment_method"
+            - "%env(MOLLIE_TEST_API_KEY)%"
+            - "%env(MOLLIE_PROFILE_KEY)%"
+            - "@sylius_mollie.resolver.mollie_methods"
+            - "@sylius_mollie.purifier.mollie_payment_method"
+            - "@sylius.repository.gateway_config"
+            - "@sylius_mollie.repository.mollie_gateway_config"
+
+    sylius_mollie.behat.context.setup.order:
+        class: Tests\Sylius\MolliePlugin\Behat\Context\Setup\OrderContext
+        public: true
+        arguments:
+            - "@doctrine.orm.default_entity_manager"
+            - "@sylius_abstraction.state_machine"
+            - "@payum"
+            - "@sylius_mollie.payum.checker.mollie_gateway_factory"
+            - '@sylius_mollie.provider.divisor'
+
+    sylius_mollie.behat.context.setup.subscription:
+        class: Tests\Sylius\MolliePlugin\Behat\Context\Setup\SubscriptionContext
+        public: true
+        arguments:
+            - "@doctrine.orm.default_entity_manager"
+            - "@sylius_mollie.factory.mollie_subscription"
+            - "@sylius.behat.shared_storage"
+            - "@sylius_mollie.subscription.processor.subscription_schedule"
+            - "@sylius_mollie.client.mollie_api"
+
+    sylius_mollie.behat.context.setup.product:
+        class: Tests\Sylius\MolliePlugin\Behat\Context\Setup\ProductContext
+        public: true
+        arguments:
+            - "@sylius.behat.shared_storage"
+            - "@sylius.repository.product"
+            - "@sylius.repository.product_variant"
+            - "@sylius.repository.channel_pricing"
+            - '@sylius_mollie.provider.divisor'
+

@@ -1,0 +1,13 @@
+imports:
+    - { resource: "resources/**/*.yaml" }
+    - { resource: "state_machine/*.php" }
+    - { resource: "grids/**/*.yaml" }
+    - { resource: "email/**/*.yaml" }
+    - { resource: "fixtures/**/*.yaml" }
+    - { resource: "twig_hooks/**/*.yaml" }
+    - { resource: "workflow/**/*.yaml" }
+
+    - { resource: "integration/refund-plugin/config.php" }
+
+bazinga_js_translation:
+    locale_fallback: '%kernel.default_locale%'

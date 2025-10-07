@@ -1,0 +1,19 @@
+<?php //tabler--menu-2
+
+return [PHP_INT_MAX, new class() implements \Symfony\Component\Cache\Traits\CachedValueInterface { public function getValue(): mixed { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\UX\\Icons\\Icon'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\UX\\Icons\\Icon')),
+    ],
+    null,
+    [],
+    $o[0],
+    [
+        [
+            '<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>',
+            [
+                'xmlns' => 'http://www.w3.org/2000/svg',
+                'viewBox' => '0 0 24 24',
+            ],
+        ],
+    ]
+); } }];

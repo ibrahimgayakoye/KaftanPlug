@@ -1,0 +1,19 @@
+sylius_mollie_admin_mollie_methods:
+    path: /mollie/methods/{id}/all
+    methods: [GET]
+    defaults:
+        _controller: sylius_mollie.controller.admin.methods
+    requirements:
+        id: '\d+'
+
+sylius_mollie_admin_test_api_keys:
+    path: /mollie/methods/test
+    methods: [GET]
+    defaults:
+      _controller: sylius_mollie.controller.admin.test_api_keys
+
+sylius_mollie_admin_mollie_method_change_position:
+    path: /mollie/methods/change-position
+    methods: [GET]
+    defaults:
+      _controller: sylius_mollie.controller.admin.change_position_payment_method

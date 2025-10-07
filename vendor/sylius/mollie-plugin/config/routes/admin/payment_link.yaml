@@ -1,0 +1,8 @@
+sylius_mollie_admin_payment_link_generate:
+    path: /orders/{orderNumber}/payment-link
+    methods: [GET, POST]
+    defaults:
+        _controller: sylius_mollie.controller.admin.generate_payment_link
+        _sylius:
+            section: admin
+            permission: true

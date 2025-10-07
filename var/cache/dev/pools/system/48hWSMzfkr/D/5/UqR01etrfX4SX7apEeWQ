@@ -1,0 +1,44 @@
+<?php //property_name_collection_a9b3aa56fedd02f0
+
+return [PHP_INT_MAX, new class() implements \Symfony\Component\Cache\Traits\CachedValueInterface { public function getValue(): mixed { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['ApiPlatform\\Metadata\\Property\\PropertyNameCollection'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Metadata\\Property\\PropertyNameCollection')),
+    ],
+    null,
+    [
+        'ApiPlatform\\Metadata\\Property\\PropertyNameCollection' => [
+            'properties' => [
+                [
+                    'name',
+                    'descriptor',
+                    'description',
+                    'metaKeywords',
+                    'metaDescription',
+                    'variants',
+                    'variant',
+                    'enabledVariants',
+                    'options',
+                    'option',
+                    'associations',
+                    'simple',
+                    'configurable',
+                    'translation',
+                    'attributes',
+                    'attribute',
+                    'attributeByCodeAndLocale',
+                    'code',
+                    'id',
+                    'slug',
+                    'createdAt',
+                    'updatedAt',
+                    'enabled',
+                    'translations',
+                    'currentLocale',
+                    'fallbackLocale',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); } }];

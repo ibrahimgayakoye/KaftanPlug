@@ -1,0 +1,17 @@
+95964e,127.0.0.1,GET,http://localhost:8000/fr_FR/,1759787798,,200,request
+c13675,127.0.0.1,GET,http://localhost:8000/fr_FR/,1759787799,,200,request
+d3a584,127.0.0.1,GET,http://localhost:8000/fr_FR/,1759787799,,200,request
+f213ef,127.0.0.1,GET,http://localhost:8000/fr_FR/,1759787800,,200,request
+4719f7,127.0.0.1,GET,http://localhost:8000/fr_FR/,1759787801,,200,request
+f8a5a1,127.0.0.1,GET,http://localhost:8000/fr_FR/,1759787822,,200,request
+357916,127.0.0.1,GET,http://localhost:8000/fr_FR/,1759787832,,200,request
+f95a97,127.0.0.1,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,1759787888,56fcbe,404,request
+56fcbe,127.0.0.1,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,1759787888,,404,request
+343fdb,127.0.0.1,GET,http://localhost:8000/fr_FR/,1759787926,,200,request
+488092,127.0.0.1,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,1759787926,a76116,404,request
+a76116,127.0.0.1,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,1759787926,,404,request
+c30ea8,127.0.0.1,GET,http://localhost:8000/fr_FR/,1759787931,,200,request
+a4baac,127.0.0.1,GET,http://localhost:8000/fr_FR/,1759787934,,200,request
+7b071b,127.0.0.1,GET,http://localhost:8000/fr_FR/,1759787935,,200,request
+8fd2d2,127.0.0.1,GET,http://localhost:8000/fr_FR/,1759787936,,200,request
+c95dd7,127.0.0.1,GET,http://localhost:8000/fr_FR/,1759787938,,200,request

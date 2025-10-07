@@ -1,0 +1,14 @@
+/vendor/
+/node_modules/
+/composer.lock
+
+/etc/build/*
+!/etc/build/.gitignore
+
+/.phpunit.result.cache
+/behat.yml
+/phpspec.yml
+/phpunit.xml
+
+/tests/TestApplication/.env.local
+/tests/TestApplication/.env.*.local

@@ -1,0 +1,83 @@
+<style>
+  :root{
+    --kp-brown:#a88a6a;
+    --kp-brown-2:#9c7d5c;
+    --kp-ink:#fff;
+    --kp-ink-soft:#f1e5d0;
+    --kp-sep:rgba(0,0,0,.15);
+    --kp-icon:20px; /* icônes légèrement plus petites */
+  }
+
+  /* ===== 1) TOP BAR ===== */
+  .bg-black{
+    background-color:var(--kp-brown) !important;
+    padding: 4px 0 !important; /* top bar plus fine */
+  }
+  .bg-black a{
+    color:var(--kp-ink) !important;
+    text-decoration:none !important;
+    font-weight:500;
+    font-size: 13px; /* texte plus petit */
+  }
+  .bg-black a:hover{ color:var(--kp-ink-soft) !important; }
+
+  /* ===== 2) LIGNE LOGO / COMPTE / PANIER ===== */
+  .border-bottom.py-4{
+    background-color:var(--kp-brown) !important;
+    border-color:var(--kp-sep) !important;
+    padding-top: .4rem !important;
+    padding-bottom: .4rem !important; /* moitié de la hauteur d’avant */
+  }
+  .border-bottom.py-4 .row{ align-items:center !important; }
+
+  .border-bottom.py-4 a,
+  .border-bottom.py-4 .btn.btn-transparent,
+  .border-bottom.py-4 .btn-icon{
+    color:var(--kp-ink) !important;
+    font-size: 14px; /* plus fin */
+  }
+  .border-bottom.py-4 a:hover{ color:var(--kp-ink-soft) !important; }
+
+  /* Icônes + total panier */
+  .border-bottom.py-4 .icon{ width:var(--kp-icon) !important; height:var(--kp-icon) !important; }
+  .border-bottom.py-4 [data-test-cart-total]{ 
+    color:var(--kp-ink) !important; 
+    font-weight:600;
+    font-size: 14px;
+  }
+
+  /* ===== 3) NAVBAR ===== */
+  .w-100.border-bottom{
+    background-color:var(--kp-brown) !important;
+    border-color:var(--kp-sep) !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+  .navbar a, .navbar .nav-link{
+    color:var(--kp-ink) !important;
+    text-decoration:none !important;
+    font-weight:600;
+    font-size: 14px;
+  }
+  .navbar a:hover{ color:var(--kp-ink-soft) !important; }
+
+  /* ===== 4) LOGO ===== */
+  .sylius-header a[aria-label="Kaftan Plug"] img{
+    height: 20px !important; /* réduit de 45 → 38px */
+    width:auto !important;
+    object-fit:contain;
+    display:block;
+  }
+  .sylius-header .container .row > .col:first-child{
+    display:flex; align-items:center; justify-content:flex-start;
+  }
+
+  /* ===== 5) Finitions ===== */
+  .btn.btn-transparent{ background:transparent !important; border:0 !important; }
+  .sylius-messages{ display:none; }
+
+  @media (max-width:992px){
+    .border-bottom.py-4 [data-test-cart-total]{ display:none; }
+    .sylius-header a[aria-label="Kaftan Plug"] img{ height:32px !important; }
+  }
+</style>

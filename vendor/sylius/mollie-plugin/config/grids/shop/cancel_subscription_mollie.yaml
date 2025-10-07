@@ -1,0 +1,10 @@
+sylius_grid:
+    templates:
+        action:
+            cancel_subscription_mollie: "@SyliusMolliePlugin/shop/account/order/grid/action/cancel_mollie_subscription.html.twig"
+    grids:
+        sylius_shop_account_order:
+            actions:
+                item:
+                    cancel_subscription_mollie:
+                        type: cancel_subscription_mollie

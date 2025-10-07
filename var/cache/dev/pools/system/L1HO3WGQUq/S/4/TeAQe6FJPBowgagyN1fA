@@ -1,0 +1,660 @@
+<?php //ux.twig_component.component_properties
+
+return [PHP_INT_MAX, [
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Customer\\OrderStatisticsComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getStatistics' => [
+                'name' => 'statistics',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Dashboard\\ChannelSelectorComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getChannels' => [
+                'name' => 'channels',
+            ],
+            'getChannelName' => [
+                'name' => 'channel_name',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Dashboard\\NewCustomersComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getNewCustomers' => [
+                'name' => 'new_customers',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Dashboard\\NewOrdersComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getNewOrders' => [
+                'name' => 'new_orders',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Dashboard\\StatisticsComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getStatistics' => [
+                'name' => 'statistics',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Dashboard\\PendingActionCountComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getCount' => [
+                'name' => 'count',
+            ],
+            'getChannel' => [
+                'name' => 'channel',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Order\\AddressHistoryComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getAddressLogs' => [
+                'name' => 'address_logs',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Order\\FormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Product\\FormComponent' => [
+        'properties' => [
+            'attributesToBeAdded' => [
+                'name' => 'attributes_to_be_added',
+                'getter' => null,
+            ],
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getMappedProductAttributes' => [
+                'name' => 'mapped_product_attributes',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Product\\ProductAttributeAutocompleteComponent' => [
+        'properties' => [
+            'selectedAttributeCodes' => [
+                'name' => 'selected_attribute_codes',
+                'getter' => null,
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getExtraOptions' => [
+                'name' => 'extra_options',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Product\\Form\\ProductTaxonsComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\ProductAttribute\\FormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\ProductOption\\FormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\ProductVariant\\FormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\UiBundle\\Twig\\Component\\ResourceFormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\PromotionCoupon\\GeneratorInstructionFormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Shipment\\ShipFormComponent' => [
+        'properties' => [
+            'pathParameters' => [
+                'name' => 'path_parameters',
+                'getter' => null,
+            ],
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Taxon\\DeleteComponent' => [
+        'properties' => [
+            'taxonId' => [
+                'name' => 'taxon_id',
+                'getter' => null,
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Taxon\\FormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Taxon\\TreeComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Zone\\FormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Shared\\RenderEntityWithTemplateComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getEntity' => [
+                'name' => 'entity',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Shared\\Navbar\\NotificationsComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getNotifications' => [
+                'name' => 'notifications',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Shared\\Navbar\\ShopPreviewComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getChannels' => [
+                'name' => 'channels',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\AdminBundle\\Twig\\Component\\Shared\\Navbar\\UserDropdownComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getUser' => [
+                'name' => 'user',
+            ],
+            'getMenuItems' => [
+                'name' => 'menu_items',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Account\\ChangePasswordFormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Account\\Address\\DefaultFormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Account\\Address\\FormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Cart\\FormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Cart\\SummaryComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Cart\\WidgetComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Checkout\\Address\\FormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Checkout\\Address\\AddressBookComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getAddresses' => [
+                'name' => 'addresses',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Product\\AddToCartFormComponent' => [
+        'properties' => [
+            'formView' => [
+                'name' => 'form',
+                'getter' => 'getFormView',
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Product\\AssociationComponent' => [
+        'properties' => [
+            'productAssociation' => [
+                'name' => 'product_association',
+                'getter' => null,
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'associatedProducts' => [
+                'name' => 'associated_products',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Product\\CardComponent' => [
+        'properties' => [
+            'product' => [
+                'name' => 'product',
+                'getter' => null,
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getProductVariant' => [
+                'name' => 'variant',
+            ],
+            'getAppliedPromotions' => [
+                'name' => 'applied_promotions',
+            ],
+            'hasDiscount' => [
+                'name' => 'has_discount',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Product\\ListComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getLatestProducts' => [
+                'name' => 'latest_products',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Product\\PriceComponent' => [
+        'properties' => [
+            'price' => [
+                'name' => 'price',
+                'getter' => null,
+            ],
+            'originalPrice' => [
+                'name' => 'original_price',
+                'getter' => null,
+            ],
+            'hasDiscount' => [
+                'name' => 'has_discount',
+                'getter' => null,
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Product\\SummaryComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Product\\BreadcrumbComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'taxon' => [
+                'name' => 'taxon',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\ProductReview\\ListComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'productReviews' => [
+                'name' => 'product_reviews',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\ProductReview\\CountComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'countReviews' => [
+                'name' => 'reviews_count',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Common\\LocaleSwitcherComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'activeLocale' => [
+                'name' => 'active_locale',
+            ],
+            'availableLocales' => [
+                'name' => 'available_locales',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Common\\CurrencySwitcherComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'activeCurrency' => [
+                'name' => 'active_currency',
+            ],
+            'availableCurrencies' => [
+                'name' => 'available_currencies',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Common\\TaxonMenuComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'taxons' => [
+                'name' => 'taxons',
+            ],
+        ],
+    ],
+    'Sylius\\Bundle\\ShopBundle\\Twig\\Component\\Product\\BySlugComponent' => [
+        'properties' => [
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [
+            'getProductBySlug' => [
+                'name' => 'product',
+            ],
+        ],
+    ],
+    'Symfony\\UX\\Icons\\Twig\\UXIconComponent' => [
+        'properties' => [],
+        'methods' => [],
+    ],
+    'Sylius\\MolliePlugin\\Twig\\Component\\Order\\CancelSubscriptionComponent' => [
+        'properties' => [
+            'cancellableSubscription' => [
+                'name' => 'cancellable_subscription',
+                'getter' => null,
+            ],
+            'orderToken' => [
+                'name' => 'order_token',
+                'getter' => null,
+            ],
+            'subscriptionId' => [
+                'name' => 'subscription_id',
+                'getter' => null,
+            ],
+            'hookableMetadata' => [
+                'name' => 'hookable_metadata',
+                'getter' => null,
+            ],
+        ],
+        'methods' => [],
+    ],
+]];
